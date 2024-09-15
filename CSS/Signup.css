@@ -1,0 +1,133 @@
+html,
+ body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ }
+
+ main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8rem;
+ }
+
+ .container{
+  top: 20%;
+  width: 400px;
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow:  1px 3px 5px rgb(0.0.0, 0.1);
+  margin: 5rem 0rem;
+  position: absolute;
+ }
+
+ .container h1{
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0rem;
+  color: rgb(233, 59, 88);
+  font-family: serif;
+  font-style: italic;
+ }
+
+ .active.error-message{
+  display: block;
+  color: red;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  background-color: transparent;
+ }
+
+ .active.success-message{
+  display: block;
+  color: green;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  background-color: transparent;
+ }
+ 
+ .container form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .container form .form-group{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+ .container form .form-group label{
+  width: 100%;
+  margin: 0.1rem 0rem;
+  color: rgb(128, 128, 128);
+  align-items: flex-start;
+ }
+
+ .container form .form-group input{
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.2rem 0rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 2px solid rgb(231, 54, 84);
+ }
+ 
+ .container form .form-group button{
+  width: 100%;
+  padding: 0.8rem;
+  margin: 1rem 0rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(233, 59, 88);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.2rem;
+ }
+ 
+ .container form .form-group button:hover{
+  background-color: rgb(238, 104, 126);
+  transform: scale(1.05);
+ }
+
+ .container  p{
+  width: 100%;
+  margin: 0.3rem 0rem;
+  color: #000;
+  font-family: serif;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+ }
+
+ .container a{
+  color: navy;
+  text-decoration: none;
+ }
+
+ .container a:hover{
+  color: rgb(238, 104, 126);
+  text-decoration: underline;
+ }
+
+
+

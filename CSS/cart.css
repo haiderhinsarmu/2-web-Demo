@@ -1,0 +1,131 @@
+html,
+body{
+ width: 100%;
+ height: 100%;
+ display: flex;
+}
+
+main{
+ width: 100%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.cart-container{
+ width: 80%;
+ min-height: 400px;
+ display: flex;
+ margin: 5rem 0rem;
+ flex-direction: column;
+ align-items: center;
+ box-shadow: 0px 3px 5px rgb(0.0.0, 0.1);
+ border-radius: 10px;
+}
+
+.cart-container h1{
+ color: rgb(224, 59, 86);
+ margin: 1rem 0rem;
+ font-size: 2rem;
+ text-align: center;
+ font-family: serif;
+ font-style: italic;
+}
+
+.cart-items table{
+ width: 100%;
+ border-collapse: collapse;
+}
+
+.cart-items table th,
+.cart-items table td{
+ border: 1px solid black;
+ padding: 0.2rem 2.5rem;
+ text-align: center;
+}
+
+.cart-items table tbody{
+ font-size: 1.2rem;
+}
+
+.cart-items table i{
+ margin-right: 0.5rem;
+ cursor: pointer;
+}
+
+.cart-items table tbody img{
+ width: 50px;
+ height: 50px;
+ object-fit: cover;
+}
+
+.cart-items table tbody input{
+ width: 50px;
+ padding: 0.2rem;
+ cursor: pointer;
+}
+
+.cart-items table tbody a{
+ color: rgb(224, 59, 86);
+ text-decoration: none;
+ cursor: pointer;
+}
+
+.cart-container .cart-summary{
+ margin: 2rem 0rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.cart-summary h2{
+ color: rgb(224, 59, 86);
+ margin: 1rem 0rem;
+ font-size: 1.5rem;
+ text-align: center;
+ font-family: serif;
+ font-style: italic;
+}
+
+.cart-summary table{
+ width: 100%;
+ border-collapse: collapse;
+}
+
+.cart-summary table th,
+.cart-summary table td{
+ border: 1px solid black;
+ padding: 0.2rem 2.5rem;
+ text-align: center;
+}
+
+.cart-summary table tbody{
+ font-size: 1.2rem;
+}
+
+.cart-summary .checkout-btn{
+ margin: 1rem 0rem;
+ padding: 0.5rem 2rem;
+ background-color: rgb(224, 59, 86);
+ color: #fff;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.cart-summary a{
+ color: #e24545;
+ text-decoration: none;
+ margin-top: 1rem;
+}
+
+.cart-summary .checkout-btn a{
+ color: #fff;
+}
+
+.cart-summary .checkout-btn:hover{
+ background-color: rgb(199, 49, 74);
+}

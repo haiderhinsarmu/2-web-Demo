@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="/CSS/index.css">
+ <link rel="stylesheet" href="/CSS/Checkout.css">
+ <title>Checkout Page</title>
+</head>
+<body>
+ <header>
+  <div class="header-container">
+   <div class="header-logo">
+    <a href="/HTML/index.html">
+     <img src="/IMG/logo.png" alt="Logo">
+    </a>
+    <a href="/HTML/index.html">
+     <h1>The Cake</h1>
+    </a>
+   </div>
+   <div class="humburger-toggle">
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="toggle-btn">
+      <span class="line1  line"></span>
+      <span class="line2  line"></span>
+      <span class="line3  line"></span>
+    </label>
+   </div>
+   <nav class="header-nav">
+    <ul>
+     <li><a href="/HTML/index.html" aria-label="Home">Home</a></li>
+     <li><a href="/HTML/About.html" aria-label="About">About</a></li>
+     <li><a href="/HTML/Contact.html" aria-label="Contact">Contact</a></li>
+     <li><a href="/HTML/Services.html" aria-label="Services">Services</a></li>
+    </ul> 
+   </nav>
+   
+   <div class="login-logout-cart">
+    <div class="user">haider</div>
+    <div class="login">
+     <a href="/HTML/Login.html" aria-label="Login">Login</a>
+    </div>
+    <div class="logout">
+      <a href="/HTML/Logout.html" aria-label="Logout">Logout</a>
+    </div>
+   <div class="cart-icon">
+     <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+   </div>
+   </div>
+
+  </div>
+ </header>
+ <main>
+   <h2>Checkout</h2>
+   
+   <p id="errorMessage" class="error-message"></p>
+   <p id="successMessage" class="success-message"></p>
+
+  <div class="checkoutContainer">
+  <section class="checkout-section1">
+    <h2>Personal Information</h3>
+     <p>Enter your personal information below.</p>
+     <form action="/" method="POST" id="personInfo">
+      <div class="form-group">
+       <label for="first-name">First Name:</label>
+       <input type="text" id="first-name" name="first-name" required>
+      </div>
+      <div class="form-group">
+       <label for="last-name">Last Name:</label>
+       <input type="text" id="last-name" name="last-name" required>
+      </div>
+      <div class="form-group">
+       <label for="email">Email:</label>
+       <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group ">
+        <label for="country">Country:</label>
+        <select class="form-option" id="country" name="country" required>
+         <option value="">Select Country</option>
+         <option value="Germany">Germany</option>
+         <option value="USA">USA</option>
+         <option value="Canada">Canada</option>
+         <option value="UK">UK</option>
+         <option value="Australia">Australia</option>
+         <option value="France">France</option>
+         <option value="Italy">Italy</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+      </div>
+      <div class="form-group">
+       <label for="phone">Phone:</label>
+       <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+       <label for="city">City:</label>
+       <input type="text" id="city" name="city" required>
+      </div>
+      <div class="form-group">
+        <label for="zip-code">Zip Code:</label>
+        <input type="text" id="zip-code" name="zip-code" required>
+      </div>
+  </section>
+
+  <section class="checkout-section2">
+    <h2>Payment</h2>
+    <div class="icons">
+    <i class="fab fa-cc-visa"></i>
+    <i class="fab fa-cc-jcb"></i>
+    <i class="fab fa-cc-amex"></i>
+    <i class="fab fa-cc-mastercard"></i>
+    <i class="fab fa-cc-discover"></i>
+    <i class="fas fa-credit-card"></i>
+    </div>
+     <form action="/" method="POST">
+      <div class="form-group">
+       <label for="card-number">Card Number:</label>
+       <input type="text" id="card-number" name="card-number" placeholder="1111 2222 3333 4444" required>
+      </div>
+      <div class="form-group">
+       <label for="expiry-date">Expiry Date:</label>
+       <input type="text" id="expiry-date" name="expiry-date" required placeholder="MM / YY">
+      </div>
+      <div class="form-group">
+       <label for="cvv">CVV:</label>
+       <input type="text" id="cvv" name="cvv" required placeholder="XXXX">
+      </div>
+      <div class="form-group">
+       <label for="name-on-card">Name on Card:</label>
+       <input type="text" id="name-on-card" name="name-on-card" required placeholder="Name on Card">
+        <small>This field should match the name on the card</small>
+      </div>
+      <div class="form-terms">
+        <input type="checkbox" id="terms-conditions" name="terms-conditions" required>
+       <p>I agree to the<a href="#">Terms and Conditions</a></p>
+      </div>
+       <h1 class="total">
+        <span class="EndTotalPrice"></span>
+       </h1>
+       <button type="submit">Pay Now </button>
+      </form >
+    </section>
+  </div>
+ </main>
+ <footer>
+  <div class="footer-container">
+   <div class="footer-contents">
+    <div class="content">
+     <h3>About Us</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ipsum vel sapien convallis dignissim.</p>
+    </div>
+    <div class="content">
+     <h3>Menu</h3>
+     <ul>
+      <li><a href="#">Breakfast</a></li>
+      <li><a href="#">Lunch</a></li>
+      <li><a href="#">Dinner</a></li>
+      <li><a href="#">Snacks</a></li>
+      <li><a href="#">Drinks</a></li>
+      <li><a href="#">Unique</a></li>
+     </ul>
+    </div>
+    <div class="content">
+     <h3>Contact Us</h3>
+     <ul>
+      <li><a href="#">Phone: (123) 456-7890</a></li>
+      <li><a href="#">Email:  contact@example.com</a></li>
+      <li><a href="#">Address: 123 Main St, City, State, ZIP</a></li>
+     </ul>
+    </div>
+    <div class="arrow">
+     <i class="fa fa-arrow-up"></i>
+    </div>
+   </div>
+   <div class="copyright">
+    <p>&copy; <span id="year">0</span> All rights reserved. Made with <i class="fas fa-heart"></i> by <a href="#">The Cake</a></p>
+    <div class="social-media-links">
+     <a href="#"><i class="fab fa-facebook-f"></i></a>
+     <a href="#"><i class="fab fa-twitter"></i></a>
+     <a href="#"><i class="fab fa-instagram"></i></a>
+     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+   </div>
+  </div>
+ </footer>
+ <script src="/JS/checkout.js"></script>
+ </body>
+ </html>
